@@ -2,11 +2,13 @@
 #include <iostream>
 #include <string>
 #include <cstdlib>
+#include <windows.h>
 
 using namespace std;
 
 int main()
 {
+	SetConsoleTitle("The Atlantic");
 	cout<< "                .'|     .8\n               .  |    .8:\n              .   |   .8;:        .8\n             .    |  .8;;:    |  .8;\n            .     n .8;;;:    | .8;;;\n           .      M.8;;;;;:   |,8;;;;;\n          .    .,'n8;;;;;;:   |8;;;;;;\n         .   .',  n;;;;;;;:   M;;;;;;;;\n        .  ,' ,   n;;;;;;;;:  n;;;;;;;;;\n       . ,'  ,    N;;;;;;;;:  n;;;;;;;;;\n      . '   ,     N;;;;;;;;;: N;;;;;;;;;;\n     .,'   .      N;;;;;;;;;: N;;;;;;;;;;\n    ..    ,       N6666666666 N6666666666\n    I    ,        M           M\n   ---nnnnn_______M___________M______mmnnn\n         '-.     The Galandor         /\n  __________'-_______________________/_________\n";
 	cout<< "               Welcome to The Atlantic\n";
 	cout<< "       To Begin Please Type start and press enter\n";	
@@ -37,16 +39,19 @@ int main()
 {	
 	cout<< "So you are "<<name<<", who is "<<age<<"years old and is employed as...\n";
 	cout<< "1)A Sailor\n2)A Soldier\n3)An Engineer\n4)I am unemployed\n";
-	int class_stats [];
+	int class_stats [100];
 	cin>> class_stats[0];
 	switch (class_stats[0])
 {
 	case 1:
-
+		cout<< "test 1\n";
+		break;
 	case 2:
-	
+		cout<< "test 2\n";
+		break;
 	case 3:
-
+		cout<< "test 3\n";
+		break;
 	case 4:
 	cout<< "You are a poor beggar wandering the streets when you come across a large, magjestic ship.(type c then press enter to continue)\n";
 	char conti;
@@ -62,19 +67,19 @@ int main()
 		char conti;
 		cin>> conti;
 		cout<< "You quickly locate the galley and begin to devore everything in sight.(type c then press enter to continue)\n";
-		char conti;
-		cin>> conti;
+		char conti1;
+		cin>> conti1;
 		cout<< "If you weren't so busy shoveling food into your mouth you may have heard the sound of footsteps in the hallway.(type c then press enter to continue)\n";
-		char conti;
-		cin>> conti;
+		char conti2;
+		cin>> conti2;
 		cout<< "A Soldier and the Captain enter the room. The captain orders the Soldier to arrest you. What do you do?\n";
 		cout<< "1)Attempt to run away.\n2)Attempt to fight the soldier\n3)Continue eating\n";
 		int a002;
-		cin>> a002;the
+		cin>> a002;
 			switch (a002)
 			{
 			case 1:
-			cout<< "You run about 3 feet before being captured. The captain orders the soldier to throw you overboard.\n"
+			cout<< "You run about 3 feet before being captured. The captain orders the soldier to throw you overboard.\n";
 			cout<< "SPLASH\nYou Are Dead.(type c then press enter to continue)\n";
 			char conti;
 			cin>> conti;
@@ -83,15 +88,15 @@ int main()
 			
 			case 2:
 			cout<< "You throw the piece of bread you had been eating at the soldier. He laughs as he throws you overboard\nSPLASH\nYou Are Dead.(type c then press enter to continue)\n";
-			char conti;
-			cin>> conti;
+			char conti3;
+			cin>> conti3;
 			return 0;
 			break;
 			
 			case 3:
 			cout<< "The soldier refuses to attack a man while he is eating. Sadly you choke to death and your body is thrown overboard.\n(type c then press enter to continue)\n";
-			char conti;
-			cin>> conti;
+			char conti4;
+			cin>> conti4;
 			return 0;
 			break;
 			
@@ -119,4 +124,5 @@ int main()
 char z;
 cin>> z;
 return 0;
+}
 }
