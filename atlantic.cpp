@@ -21,14 +21,14 @@ int main()
 	cin>> age;
 	if (age>75)
 {
-	cout<< "Don't you think your a little bit to old to sail across the atlantic?(type c then press enter to continue)\n"
+	cout<< "Don't you think your a little bit to old to sail across the atlantic?(type c then press enter to continue)\n";
 	char conti;
 	cin>> conti;
 	return 0;
 }
 	else if (age<12)
 {
-	cout<< "Your to young to go on such a dangerous journey.(type c then press enter to continue)\n"
+	cout<< "Your to young to go on such a dangerous journey.(type c then press enter to continue)\n";
 	char conti;
 	cin>> conti;
 	return 0;
